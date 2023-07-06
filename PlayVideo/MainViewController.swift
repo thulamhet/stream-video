@@ -14,8 +14,9 @@ class MainViewController: UIViewController {
     var isYTB: Bool = false
     
     override func viewDidLoad() {
-//        let url = "https://www.youtube.com/watch?v=RlTDbIutJsU&ab_channel=Lucin3x"
-      let url = "https://om-other.vnpay.vn/test.mp4"
+      let url = "https://www.youtube.com/watch?v=RlTDbIutJsU&ab_channel=Lucin3x"
+//      let url = "https://om-other.vnpay.vn/test.mp4"
+//        let url = "https://dh2.v.netease.com/2017/cg/fxtpty.mp4"
         if url.contains("youtube.com") {
             guard let videoID = extractYouTubeVideoID(url) else {
                 print("Invalid YouTube URL")
